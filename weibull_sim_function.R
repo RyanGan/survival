@@ -26,7 +26,7 @@ weib_rng <- function(n = 100, shape, scale) {
   # Uniform prob
   u = runif(n, min = 0, max = 1)
   
-  t = scale * (-log( 1 - u ))**(1 / shape) 
+  t = scale * (-log( u ))**(1 / shape) 
   
   return(t)
   
